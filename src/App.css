@@ -1,0 +1,63 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100rem;
+    height: 50rem;
+    flex-direction: column; 
+
+   border-width: 1;
+    border-color: red;
+    border: 1;
+    border-style: solid;
+}
+
+body {
+  background-image: url('/hardwood.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face{
+  font-family: 'script typeface';
+  src: local('/public/&Championship.ttf') format('woff2');
+ 
+}
+.app-header {
+  text-align: center;
+  color: #fff;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 8px #000;
+  letter-spacing: 2px;
+  font-family: 'script typeface', sans-serif;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+@media (min-width: 600px) {
+  .cards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .cards-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+
